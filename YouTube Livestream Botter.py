@@ -54,7 +54,7 @@ class proxy():
 
     def update(self):
         while True:
-            url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000&ssl=yes"
+            url = "https://api.proxyscrape.com/?request=getproxies&proxytype=http&timeout=10000"
             r = requests.get(url)
 
             self.splited = r.text.split("\r\n") #scraping and splitting proxies
